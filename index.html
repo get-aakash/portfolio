@@ -18,6 +18,11 @@
 </head>
 
 <body>
+  <!-- dark mode button -->
+  <input type="checkbox" id="darkmode" class="dark-mode-checkbox">
+  <label for="darkmode">
+    <i class="fa-solid fa-circle-half-stroke toggle"></i>
+  </label>
   <div class="wrapper">
     <!-- header section -->
     <header class="flex primary-header">
@@ -29,30 +34,30 @@
       </div>
       <div class="right">
         <input type="checkbox" id="check" />
-        <label for="" class="checkBtn">
+        <label for="check" class="checkBtn">
           <i class="fa-solid fa-bars"></i>
         </label>
         <ul class="flex primary-navigation">
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </header>
     <!-- hero section -->
-    <section class="section1 grid">
+    <section class="section1 grid" id="home">
       <div class="left"><img src="assets/profile_image.png" alt=""></div>
       <div class="right flex">
         <div>
@@ -61,10 +66,10 @@
 
         </div>
         <a href="" download="">
-        <button>
-          Download Resume
-          <i class="fa-solid fa-download"></i>
-        </button>
+          <button>
+            Download Resume
+            <i class="fa-solid fa-download"></i>
+          </button>
         </a>
       </div>
     </section>
@@ -105,7 +110,7 @@
     </section>
     <!-- skills section -->
 
-    <section class="section3 flex">
+    <section class="section3 flex" id="skills">
       <div class="skills-container flex">
         <div class="flex">
           <i class="fa-brands fa-html5"></i><span>HTML</span>
@@ -127,7 +132,7 @@
     </section>
     <!-- project section -->
 
-    <section class="section4 flex">
+    <section class="section4 flex" id="projects">
       <h1 class="title">My Projects</h1>
       <div class="projects-container grid">
         <div class="project-card flex">
@@ -157,12 +162,12 @@
             <p>E-commerce Full Stack Web Application Built Using React</p>
           </div>
         </div>
-    
+
       </div>
     </section>
     <!-- about me section -->
 
-    <section class="section5 flex">
+    <section class="section5 flex" id="about">
       <h1 class="title">About Me</h1>
       <div class="about-container flex">
         <div class="left flex">
@@ -186,7 +191,7 @@
       </div>
     </section>
     <!-- contact section -->
-    <section class="section6 flex">
+    <section class="section6 flex" id="contact">
       <h1 class="title">Get In Touch</h1>
       <div class="socials flex">
         <i class="fa-brands fa-linkedin-in"></i>
@@ -206,6 +211,42 @@
       </div>
     </section>
     <!-- footer section -->
+
+    <footer>
+      <div class="footer-container flex" >
+        <div class="footer-top flex">
+          <div>
+            <h3>LINKS</h3>
+            <ul class="flex">
+              <li>Home</li>
+              <li>Skills</li>
+              <li>Projects</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div>
+            <h3>EXTERNAL LINKS</h3>
+            <ul class="flex">
+              <li>YouTube</li>
+              <li>LinkedIn</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom flex">
+          <h1>Aakash | Web Developer</h1>
+          <p>&copy; | All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Button -->
+    <div class="scroll-to-top">
+      <a href="#" class="scroll-btn">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
   </div>
 </body>
 
